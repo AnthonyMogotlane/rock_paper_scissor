@@ -7,19 +7,23 @@
 body {
     color: red;
     background: yellow;
+    display: block;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
     display: flex;
     justify-content: space-between;
-    margin: 250px;
+    margin: 0 45px;
 }
 
 .container div {
     color: white;
     width: 80px;
     height: 80px;
-    justify-items: center;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
