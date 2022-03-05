@@ -8,3 +8,29 @@ body {
     color: red;
     background: yellow;
 }
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 250px;
+}
+
+.container div {
+    color: white;
+    width: 80px;
+    height: 80px;
+    justify-items: center;
+    align-items: center;
+}
+
+.rock {
+    background-color: blue;
+}
+
+.paper {
+    background-color: red;
+}
+
+.scissor {
+    background-color: green;
+}

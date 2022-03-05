@@ -1,3 +1,7 @@
-let rand = Math.random(20);
+let rand = Math.floor(Math.random()*3);
 
-console.log(rand);
+let computer = ["rock", "paper", "scissor"];
+
+let computer_decide = computer[rand];
+
+
