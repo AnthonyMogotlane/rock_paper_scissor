@@ -12,14 +12,25 @@ function playGame(user){
     // decide who won using the rules
     let winner = "No one";
     
-    // and that is for you to do
-    // and that is for you to do
-    // and that is for you to do
-    // and that is for you to do
-    // and that is for you to do
+    if(user === computer_decide) {
+        winner = "No one"
+    } else if(user === "rock" && computer_decide === "scissor") {
+        winner = "You"
+    } else if(user === "paper" && computer_decide === "rock") {
+        winner = "You"
+    } else if(user === "scissor" && computer_decide === "paper") {
+        winner = "You"
+    } else if(computer_decide === "rock" && user === "scissor") {
+        winner = "Computer"
+    } else if(computer_decide === "paper" && user === "rock") {
+        winner = "Computer"
+    } else if(computer_decide === "scissor" && user === "paper") {
+        winner = "Computer"
+    }
 
     // return the winner
     return winner;
+    
 }
 
 // who won
