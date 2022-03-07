@@ -11,13 +11,26 @@ function playGame(user){
 
     // decide who won using the rules
     let winner = "No one";
+    let cm = "Computer: "+computer_decide+"\nUser: "+user+"\n";
     
-    // and that is for you to do
-    // and that is for you to do
-    // and that is for you to do
-    // and that is for you to do
-    // and that is for you to do
-
+    // rock beats scissor
+    if(computer_decide == 'rock' && user == 'scissor'){
+        winner = cm+'Computer';
+    } else if(computer_decide == 'scissor' && user == 'rock'){
+        winner = 'User'
+    }
+    // scissor beats paper
+    else if((computer_decide == 'scissor' && user == 'paper')){
+        winner = 'Computer';
+    } else if(computer_decide == 'paper' && user == 'scissor'){
+        winner = 'User';
+    }
+    // paper beats rock
+    else if((computer_decide == 'rock' && user == 'paper')){
+        winner = 'User';
+    } else if(computer_decide == 'paper' && user == 'rock'){
+        winner = 'Computer';
+    }
     // return the winner
     return winner;
 }
