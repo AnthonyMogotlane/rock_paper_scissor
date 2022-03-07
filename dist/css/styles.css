@@ -8,7 +8,7 @@
 }
 
 body {
-    color: red;
+    color: rgb(0, 0, 0);
     background: #444;
     display: block;
     justify-content: center;

@@ -11,22 +11,23 @@ function playGame(user){
 
     // decide who won using the rules
     let winner = "No one";
-    let cm = "Computer: "+computer_decide+"\nUser: "+user+"\n";
+    let cm = "Computer: "+computer_decide+"\nYou: "+user+"\n\n";
+    document.querySelector("#result").innerHTML = cm;
     
     if(user === computer_decide) {
-        winner = cm+"No one"
+        winner = "No one"
     } else if(user === "rock" && computer_decide === "scissor") {
-        winner = cm+"You"
+        winner = "You"
     } else if(user === "paper" && computer_decide === "rock") {
-        winner = cm+"You"
+        winner = "You"
     } else if(user === "scissor" && computer_decide === "paper") {
-        winner = cm+"You"
+        winner = "You"
     } else if(computer_decide === "rock" && user === "scissor") {
-        winner = cm+"Computer"
+        winner = "Computer"
     } else if(computer_decide === "paper" && user === "rock") {
         winner = "Computer"
     } else if(computer_decide === "scissor" && user === "paper") {
-        winner = cm+"Computer"
+        winner = "Computer"
     }
 
     // return the winner
