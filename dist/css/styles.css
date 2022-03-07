@@ -1,30 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Hubballi', cursive;
 }
 
 body {
     color: red;
-    background: yellow;
+    background: #444;
     display: block;
     justify-content: center;
     align-items: center;
 }
 
+h1, h2, h4 {
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+h1 {
+    color: yellow;
+    margin-top: 20px;
+}
+
+h2 {
+    margin: 50px;
+}
+
+h4 {
+    margin-top: 20px 5px 0 5px;
+    color: yellow;   
+}
+
 .container {
     display: flex;
-    justify-content: space-between;
-    margin: 0 45px;
+    justify-content: center;
+    margin: 45px 100px;
 }
 
 .container div {
     color: white;
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 20px;
+    border-radius: 50%;
+}
+
+.icon {
+    width: 100px;
+    text-align: center;
+}
+
+.rock, .paper, .scissor {
+    cursor: pointer;
 }
 
 .rock {

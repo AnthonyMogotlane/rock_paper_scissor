@@ -13,26 +13,25 @@ function playGame(user){
     let winner = "No one";
     let cm = "Computer: "+computer_decide+"\nUser: "+user+"\n";
     
-    // rock beats scissor
-    if(computer_decide == 'rock' && user == 'scissor'){
-        winner = cm+'Computer';
-    } else if(computer_decide == 'scissor' && user == 'rock'){
-        winner = 'User'
+    if(user === computer_decide) {
+        winner = cm+"No one"
+    } else if(user === "rock" && computer_decide === "scissor") {
+        winner = cm+"You"
+    } else if(user === "paper" && computer_decide === "rock") {
+        winner = cm+"You"
+    } else if(user === "scissor" && computer_decide === "paper") {
+        winner = cm+"You"
+    } else if(computer_decide === "rock" && user === "scissor") {
+        winner = cm+"Computer"
+    } else if(computer_decide === "paper" && user === "rock") {
+        winner = "Computer"
+    } else if(computer_decide === "scissor" && user === "paper") {
+        winner = cm+"Computer"
     }
-    // scissor beats paper
-    else if((computer_decide == 'scissor' && user == 'paper')){
-        winner = 'Computer';
-    } else if(computer_decide == 'paper' && user == 'scissor'){
-        winner = 'User';
-    }
-    // paper beats rock
-    else if((computer_decide == 'rock' && user == 'paper')){
-        winner = 'User';
-    } else if(computer_decide == 'paper' && user == 'rock'){
-        winner = 'Computer';
-    }
+
     // return the winner
     return winner;
+    
 }
 
 // who won
