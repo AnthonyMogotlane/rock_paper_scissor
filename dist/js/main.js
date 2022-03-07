@@ -11,7 +11,7 @@ function playGame(user){
 
     // decide who won using the rules
     let winner = "No one";
-    let cm = "Computer: "+computer_decide+"\nYou: "+user+"\n\n";
+    let cm = "Computer: "+computer_decide+"<br>You: "+user+"\n\n";
     document.querySelector("#result").innerHTML = cm;
     
     if(user === computer_decide) {
